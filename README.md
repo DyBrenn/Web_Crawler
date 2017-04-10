@@ -1,5 +1,5 @@
 # Web_Crawler
-Hello and welcome to my web crawler. It's written in python3 and extracts data from a website using requests and beautifulsoup4. Data is extracted from the last table on pge.com.
+Hello and welcome to my web crawler. It's written in python3 and extracts data from a website using requests and beautifulsoup4 libraries. Data is extracted from the last table on pge.com.
 Data extracted includes company names, dates, and injection / withdrawl of funds which is stored using net injection (injection - withdrawl).
 The data is then stored and formatted in excel using xlwt which is then emailed to a mutable list of emails using email.mime. All of this represents the pge_crawl script.
 

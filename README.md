@@ -4,5 +4,5 @@ Data extracted includes company names, dates, and injection / withdrawl of funds
 The data is then stored and formatted in excel using xlwt which is then emailed to a mutable list of emails using email.mime. All of this represents the pge_crawl script.
 
 The crawl script is run by another script called pge_modified which checks if the most recent date in the relevant table has changed (meaning new data has been updated to the table).
-This is done by storing the most recent date in a text file and crawling the website to extract the most recent datas date, and comparing it to date in the text file. If different, the pge_crawl script is run.
-This can be automated to run at a set time every day multiple ways, but I used the built-in windows task scheduler to run pge_modified every 10 minutes between 6 to 9 a.m.
+This is done by storing the most recent date in a text file and crawling the website to extract the most recent datas date, and comparing it to the date in the text file. If different, the pge_crawl script is run.
+This can be automated to run at a set time every day multiple ways, but I used the built-in windows task scheduler to run pge_modified every 10 minutes between 6 to 9 a.m. using the run_pge bash file.
